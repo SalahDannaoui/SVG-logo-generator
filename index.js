@@ -26,5 +26,5 @@ const questions = [
 ];
 
 inquirer.prompt(questions)
-    .then((result) => generateSVG. (result))
+    .then((result) => generateSVG.makeSVGstring(result))
     .catch((err) => console.log(err))
